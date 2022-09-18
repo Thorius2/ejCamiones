@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E3 - JS</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="title">
+        <h1>Truck Selector Simulator 2022</h1>
+        <h3 class="subTitle">
+          Alguna vez deseaste una página web que te permita filtrar por una
+          limitada cantidad de colores y marcas para camiones? Pues este es el
+          lugar correcto!
+        </h3>
+      </div>
+
+      <div class="filtrosContainer">
+        <div class="title">
+          <h2>
+            Vea las opciones de camiones que tenemos disponible, filtrando por
+            marca y color
+          </h2>
+          <h4 class="subTitle">
+            En el caso de no encontrar el color deseado, por favor, intente con
+            otra Marca o color.
+          </h4>
+        </div>
+
+        <div class="seccionSelect">
+          <div class="selectContainer">
+            <label for="selectMarca"
+              >Seleccione la marca del vehículo deseado.</label
+            >
+            <select id="selectMarca">
+              <option value="Chevrolet">Chevrolet</option>
+              <option value="Ford">Ford</option>
+              <option value="Toyota">Toyota</option>
+              <option value="Renault">Renault</option>
+            </select>
+            <small></small>
+          </div>
+
+          <div class="selectContainer">
+            <label for="selectColor"
+              >Seleccione el color del vehículo deseado.</label
+            >
+            <select id="selectColor">
+              <option value="Negro">Negro</option>
+              <option value="Rojo">Rojo</option>
+              <option value="Azul">Azul</option>
+              <option value="Gris">Gris</option>
+              <option value="Naranja">Naranja</option>
+              <option value="Verde">Verde</option>
+            </select>
+            <small></small>
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button type="button" class="marca-btn">Filtrar por Marca</button>
+          <button type="button" class="ambos-btn">Filtrar por Ambos</button>
+          <button type="button" class="color-btn">Filtrar por Color</button>
+        </div>
+      </div>
+
+      <!-- Agregar un Switch, para que estile el fondo de la card en base al color elegido, si es Negro, black, sino, brown, etc. -->
+
+      <div class="cardContainer"></div>
+    </main>
+    <script src="utils.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
